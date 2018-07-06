@@ -1,4 +1,4 @@
-(defproject cljs-material-ui "1.0.00"
+(defproject cljs-material-ui "1.0.01"
   :description "Iterop library for material-ui"
   :url "https://github.com/stephenway/cljs-material-ui"
   :license {:name "Eclipse Public License"

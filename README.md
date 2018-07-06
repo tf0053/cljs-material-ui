@@ -16,7 +16,7 @@ When using [AutoComplete](http://www.material-ui.com/#/components/auto-complete)
 
 ## Installation
 
-- Add `[cljs-material-ui "1.0.0"]` to your dependencies
+- Add `[cljs-material-ui "1.0.01"]` to your dependencies
 - Add `[cljsjs/react "16.3.0-0"]` or newer version to your dependencies
 - Add `[cljsjs/react-dom "16.3.0-0"]` or newer version to your dependencies
 
