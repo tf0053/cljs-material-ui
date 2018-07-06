@@ -1,4 +1,4 @@
-(ns cljs-react-material-ui.chip-input.reagent
+(ns cljs-material-ui.chip-input.reagent
   (:require [cljsjs.material-ui-chip-input]
             [reagent.core :as r]))
 

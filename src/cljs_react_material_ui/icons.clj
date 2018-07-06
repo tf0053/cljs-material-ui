@@ -1,9 +1,8 @@
-(ns cljs-react-material-ui.icons
-  (:require [cljs-react-material-ui.core :as m]))
+(ns cljs-material-ui.icons
+  (:require [cljs-material-ui.core :as m]))
 
 (def tags
-  '[
-    ActionAccessibility
+  '[ActionAccessibility
     ActionAccessible
     ActionAccountBalanceWallet
     ActionAccountBalance
@@ -963,8 +962,7 @@
     ToggleRadioButtonUnchecked
     ToggleStarBorder
     ToggleStarHalf
-    ToggleStar
-    ])
+    ToggleStar])
 
 (defmacro generate-mui-icon-fns [fname]
   `(m/generate-mui-dom-fns ~fname ~tags))

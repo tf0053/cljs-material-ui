@@ -7,7 +7,7 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-/cljs-react-material-ui.iml
+/cljs-material-ui.iml
 .hgignore
 .hg/
 /.idea

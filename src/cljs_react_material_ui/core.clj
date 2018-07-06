@@ -1,4 +1,4 @@
-(ns cljs-react-material-ui.core
+(ns cljs-material-ui.core
   (:require [clojure.string :as str]))
 
 (defn kebab-case
@@ -9,7 +9,7 @@
 (defn generate-mui-dom-fn [fname tname]
   (let [f (symbol fname)]
     `(~'defn ~(symbol (kebab-case (str tname))) [& ~'args]
-       (~f ~(name tname) ~'args))))
+             (~f ~(name tname) ~'args))))
 
 (defmacro generate-mui-dom-fns [fname tags]
   `(do ~@(clojure.core/map (partial generate-mui-dom-fn fname) tags)))
@@ -18,7 +18,7 @@
   `(def ~(symbol (kebab-case (str tname))) (r/adapt-react-class (~'aget js/MaterialUI ~(name tname)))))
 
 (defn generate-mui-rum-fn [tname]
-  `(def ~(symbol (kebab-case (str tname))) (cljs-react-material-ui.core/adapt-rum-class (~'aget js/MaterialUI ~(name tname)))))
+  `(def ~(symbol (kebab-case (str tname))) (cljs-material-ui.core/adapt-rum-class (~'aget js/MaterialUI ~(name tname)))))
 
 (defmacro adapt-rum-class [react-class]
   `(fn [& args#]
@@ -29,4 +29,4 @@
        (let [new-children# (if (vector? type#)
                              [(sablono.interpreter/interpret (last children#))]
                              children#)]
-         (cljs-react-material-ui.core/create-mui-cmp ~react-class (cons opts# new-children#))))))
+         (cljs-material-ui.core/create-mui-cmp ~react-class (cons opts# new-children#))))))
