@@ -5,7 +5,6 @@
 ; $1
 (def tags
   '[AppBar
-    AutoComplete
     Avatar
     Backdrop
     Badge
@@ -14,7 +13,9 @@
     Button
     ButtonBase
     Card
+    CardActionArea
     CardActions
+    CardContent
     CardHeader
     CardMedia
     Checkbox
@@ -35,6 +36,7 @@
     ExpansionPanelDetails
     ExpansionPanelSummary
     Fade
+    FilledInput
     FormControl
     FormControlLabel
     FormGroup
@@ -50,7 +52,9 @@
     IconButton
     Input
     InputAdornment
+    InputBase
     InputLabel
+    jssPreset
     LinearProgress
     List
     ListItem
@@ -64,10 +68,14 @@
     MenuList
     MobileStepper
     Modal
+    ModalManager
     MuiThemeProvider
     NativeSelect
+    NoSsr
+    OutlinedInput
     Paper
     Popover
+    Popper
     Portal
     Radio
     RadioGroup
@@ -80,12 +88,12 @@
     StepButton
     StepConnector
     StepContent
+    StepIcon
     StepLabel
     Stepper
     SvgIcon
     SwipeableDrawer
     Switch
-    SwitchBase
     Tab
     Table
     TableBody
@@ -99,7 +107,6 @@
     TextField
     Toolbar
     Tooltip
-    TouchRipple
     Typography
     Zoom])
 
