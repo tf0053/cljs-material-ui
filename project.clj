@@ -1,11 +1,13 @@
-(defproject cljs-material-ui "1.0.01"
+(defproject net.xlfe/cljs-material-ui "3.2.0-SNAPSHOT"
   :description "Iterop library for material-ui"
-  :url "https://github.com/stephenway/cljs-material-ui"
+  :url "https://github.com/xlfe/cljs-material-ui"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[cljsjs/material-ui "1.2.1-0"]
-                 [cljsjs/react "16.3.0-0"]
-                 [cljsjs/react-dom "16.3.0-0"]
-                 [org.clojure/clojure "1.9.0-alpha14"]
-                 [org.clojure/clojurescript "1.9.494"]
-                 [sablono "0.8.0"]])
+  :dependencies [
+                 [cljsjs/material-ui "3.2.0-0"]
+                 [cljsjs/material-ui-icons "3.0.1-0"] ;; latest release
+                 [cljsjs/react "16.4.0-0"]
+                 [cljsjs/react-dom "16.4.0-0"]
+                 [org.clojure/clojure "1.9.0"]
+                 [org.clojure/clojurescript "1.9.946"]
+                 [sablono "0.8.1"]])

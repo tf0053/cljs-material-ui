@@ -25,10 +25,10 @@
   ([raw-theme] (->> raw-theme
                     (transform-keys camel-case)
                     clj->js
-                    js/MaterialUIStyles.getMuiTheme)))
+                    js/MaterialUIStyles.createMuiTheme)))
 
-(defn color [color-key]
-  (aget js/MaterialUIStyles "colors" (name (camel-case color-key))))
+(defn color [& colour-keys]
+  (apply aget (concat [js/MaterialUIColors] (map #(name (camel-case %)) colour-keys))))
 
 (def make-selectable (aget js/MaterialUI "makeSelectable"))
 
