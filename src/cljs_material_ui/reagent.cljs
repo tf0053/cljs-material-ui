@@ -4,7 +4,7 @@
             [reagent.impl.template]
             [reagent.interop :refer-macros [$ $!]]))
 
-(def selectable-list (r/adapt-react-class ((aget js/MaterialUI "makeSelectable") (aget js/MaterialUI "List"))))
+;(def selectable-list (r/adapt-react-class ((aget js/MaterialUI "makeSelectable") (aget js/MaterialUI "List"))))
 
 (def app-bar (r/adapt-react-class (aget js/MaterialUI "AppBar")))
 (def avatar (r/adapt-react-class (aget js/MaterialUI "Avatar")))

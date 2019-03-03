@@ -34,7 +34,7 @@
 
 (def create-mui-el (partial create-mui-cmp js/MaterialUI))
 
-(defn selectable-list [& args] (create-mui-cmp (make-selectable (aget js/MaterialUI "List")) args))
+;(defn selectable-list [& args] (create-mui-cmp (make-selectable (aget js/MaterialUI "List")) args))
 
 (defn app-bar [& args] (create-mui-el "AppBar" args))
 (defn avatar [& args] (create-mui-el "Avatar" args))

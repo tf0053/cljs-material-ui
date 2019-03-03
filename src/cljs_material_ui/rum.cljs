@@ -4,7 +4,7 @@
   (:require [rum.core]
             [cljs-material-ui.core]))
 
-(def selectable-list (cljs-material-ui.core/adapt-rum-class ((aget js/MaterialUI "makeSelectable") (aget js/MaterialUI "List"))))
+;(def selectable-list (cljs-material-ui.core/adapt-rum-class ((aget js/MaterialUI "makeSelectable") (aget js/MaterialUI "List"))))
 
 (def app-bar (cljs-material-ui.core/adapt-rum-class (aget js/MaterialUI "AppBar")))
 (def avatar (cljs-material-ui.core/adapt-rum-class (aget js/MaterialUI "Avatar")))
