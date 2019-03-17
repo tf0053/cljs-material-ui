@@ -8,6 +8,4 @@
                  [cljsjs/material-ui-icons "3.0.1-0"] ;; latest release
                  [cljsjs/react "16.4.0-0"]
                  [cljsjs/react-dom "16.4.0-0"]
-                 [org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.9.946"]
-                 [sablono "0.8.1"]])
+                 [sablono "0.8.5"]])
